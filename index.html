@@ -6,32 +6,34 @@
   </head>
     <body>         
       <header class="main-header">
-          <a class="header-logo" href="#">
+          <a class="header-logo">
             <h1>Техномарт</h1>
           </a>
           <div="user-panel">
-            <a class="panel" href="#">Поиск</a>
-              <a href="#">Закладки</a>
-              <a class="basketh" ref="#">Корзина</a>
-            <a href="#">Оформить заказ</a>
+            <form>
+            <label><input type="search"  placeholder="Поиск:"></label>
+            </form>
+              <a class="user-panel-marks" href="#">Закладки</a>
+              <a class="basketh" href="#">Корзина</a>
+            <a class="user-panel-buy" href="#">Оформить заказ</a>
           </div>
           <div class="business-card">
             <p class="business-card-text">
               Интернет-магазин<br>
               строительных материалов<br>
               и инструментов для ремонта</p>
-              <a class="button-number" href="tel:+78125550555">+7(812)5550555</a>
+              <a class="business-card-phone" href="tel:+78125550555">+7(812)5550555</a>
               <span="business-card-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
           </div>
           <ul class="user-navigation-list">
-            <li class="user-navigation-item-link">Войти</li>
+            <li class="user-navigation-item-login">Войти</li>
             <li class="user-navigation-item-registration">Регистрация</li>
           </ul>
         <nav class="site-navigation">
           <ul class="site-navigation-list">
             <li class="site-navigation-item"><a href="#">Главная</a></li>
             <li class="site-navigation-item"><a href="#">Компания</a></li>
-            <li class="site-navigation-item"><a href="#">Каталог</a></li>
+            <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
             <li class="site-navigation-item"><a href="#">Новости</a></li>
             <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
             <li class="site-navigation-item"><a href="#">Доставка</a></li>
@@ -40,7 +42,7 @@
         </nav>
       </header>  
       <main>
-        
+        <section class="offers">
           <div class="materials">
             <h2 class="white-title">Материалы</h2>
             <div class="category-img">
@@ -89,14 +91,14 @@
               </div>               
                   <a class="sales-link">На 350 товаров</a>
               </div>
-            <div class="delivery">
+            <div class="delivery-free">
               <h2 class="white-title">Доставка</h2>
               <div class="category-img">
                 <img src="img/delivery-icon.png" width="78" height="63" alt="Доставка">
               </div>  
                   <a class="delivery-link">Бесплатно</a>      
               </div>                              
-        
+          </section>
         <section class="popular-goods">
           <div class="popular-technic">
             <h2 class="goods-title blue-title">Популярные товары</h2>
@@ -144,25 +146,25 @@
             <a class="button" href="#">все популярные производители</a>
           </div>
             <ul class="popular-brands-list">
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="bosch"></a>
               </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="makita"></a>
               </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="dewalt"></a>
               </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                   <a href="#"><img src="img/interskol.jpg" width="200" height="88" alt="interskol"></a>
                 </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="lg"></a>
               </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="aeg"></a>
               </li>
-              <li class="popular-brands-list">
+              <li class="popular-brands-item">
                 <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="metabo"></a></li>
             </ul>
           </div>
@@ -181,11 +183,12 @@
               <li class="category-service-item"><label>Кредит</label></li>
             </ul>
             <ul class="service-content-list">
-              <li class="service-content-item"><h3>Доставка</h3><p>
-                  Мы с удовольствием доставим ваш товар прямо 
+              <li class="service-content-item"><h3 class="delivery-title">Доставка</h3>
+                <p class="delivery-paragraf">Мы с удовольствием доставим ваш товар прямо 
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br> 
-                  поднимая его на ваш этаж!</p></li>
+                  поднимая его на ваш этаж!</p>
+                </li>
               <li class="service-content-item"><h3>Гарантия</h3><p>Если купленный у нас товар поломается или заискрит, 
                   а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии.
                   Мы обменяем сгоревший товар на новый.<br> 
@@ -201,7 +204,7 @@
             <h2 class="company-title tite-black">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
               <p class="company-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-              <p class="company-info-delivery">Мы можем доставить ваш товар в самые отдаленные точки России!
+              <p class="company-info delivery">Мы можем доставить ваш товар в самые отдаленные точки России!
               Техномарт работает со многими транспортными компаниями:</p>
                 <ul class="delivery-brand-list">
                   <li class="delivery-brand-item">Деловые линии</li>
@@ -212,9 +215,9 @@
             </div>
           <div class="contacts">
             <h2 class="contacts-title title-black">КОНТАКТЫ</h2>
-            <p>Вы можете забрать сами,<br> заехав в наш офис</p>
+            <p>Вы можете забрать сами, заехав в наш офис</p>
             <a class="map make-map" href="img/big-map.jpg">
-              <img src="img/map.jpg" width="300" height="158" alt="google-map">
+              <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             </a>
           <div class="modal-map">
 
