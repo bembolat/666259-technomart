@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   </head>
     <body>         
       <header class="main-header">
+        <div class="header-top">
           <a class="header-logo">
             <h1>Техномарт</h1>
           </a>
-          <div="user-panel">
-            <form>
+            <form class="user-panel">
             <label><input type="search"  placeholder="Поиск:"></label>
             </form>
               <a class="user-panel-marks" href="#">Закладки</a>
@@ -23,7 +27,7 @@
               строительных материалов<br>
               и инструментов для ремонта</p>
               <a class="business-card-phone" href="tel:+78125550555">+7(812)5550555</a>
-              <span="business-card-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
+              <span class="business-card-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
           </div>
           <ul class="user-navigation-list">
             <li class="user-navigation-item-login">Войти</li>
@@ -85,7 +89,7 @@
               </figure>
               </article>
             <div class="sales">
-              <h2 class="white-title">Скидки</h2>  
+              <h2 class="white-title">Скидки 50%</h2>  
               <div class="category-img">
                 <img src="img/discounts-icon.png" width="59" height="72" alt="Скидки 50%">
               </div>               
@@ -102,7 +106,7 @@
         <section class="popular-goods">
           <div class="popular-technic">
             <h2 class="goods-title blue-title">Популярные товары</h2>
-            <a class="button" href="#">>Все популярные товары</a>
+            <a class="button" href="#">Все популярные товары</a>
           </div>
             <ul class="popular-goods-list">
               <li class="popular-goods-item">
@@ -135,7 +139,7 @@
                       <a href="#in-bookmark" class="in-bookmark">В закладки</a>
                    </div>
                 <img src="img/bosh2000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
-                <h3>Перфоратор BOSCH BFG 000</h3><a class="price" href="#">12500  Р.</a>
+                <h3>Перфоратор BOSCH BFG 2000</h3><a class="price" href="#">12500  Р.</a>
               </li>  
             </ul>
           </div>
@@ -158,6 +162,9 @@
               <li class="popular-brands-item">
                   <a href="#"><img src="img/interskol.jpg" width="200" height="88" alt="interskol"></a>
                 </li>
+                <li class="popular-brands-item">
+                    <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="hitachi"></a>
+                  </li>
               <li class="popular-brands-item">
                 <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="lg"></a>
               </li>
@@ -183,25 +190,25 @@
               <li class="category-service-item"><label>Кредит</label></li>
             </ul>
             <ul class="service-content-list">
-              <li class="service-content-item"><h3 class="delivery-title">Доставка</h3>
+              <li class="service-content-item"><h3 class="blue-title delivery-title">Доставка</h3>
                 <p class="delivery-paragraf">Мы с удовольствием доставим ваш товар прямо 
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,<br> 
                   поднимая его на ваш этаж!</p>
                 </li>
-              <li class="service-content-item"><h3>Гарантия</h3><p>Если купленный у нас товар поломается или заискрит, 
+              <li class="service-content-item"><h3 class="blue-title">Гарантия</h3><p>Если купленный у нас товар поломается или заискрит, 
                   а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии.
                   Мы обменяем сгоревший товар на новый.<br> 
                   Дом уж восстановите как-нибудь сами.</p></li>    
-              <li class="service-content-item"><h3>Кредит</h3><p>Залезть в долговую яму стало проще! 
-                  Кредитные консультанты придут вам на помощь.</p><a class="application" href="#">Отправить заявку</a></li>
+              <li class="service-content-item"><h3 class="blue-title">Кредит</h3><p>Залезть в долговую яму стало проще! 
+                  Кредитные консультанты придут вам на помощь.</p><a class="application button" href="#">Отправить заявку</a></li>
             </ul>           
           </div>
         </section>
 
-        <section class="about-company "
+        <section class="about-company">
           <div class="company">
-            <h2 class="company-title tite-black">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+            <h2 class="company-title black-title">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
               <p class="company-info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
               строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
               <p class="company-info delivery">Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -214,7 +221,7 @@
               <a class="button more-info" href="#">Подробнее о компании</a>
             </div>
           <div class="contacts">
-            <h2 class="contacts-title title-black">КОНТАКТЫ</h2>
+            <h2 class="contacts-title black-title">КОНТАКТЫ</h2>
             <p>Вы можете забрать сами, заехав в наш офис</p>
             <a class="map make-map" href="img/big-map.jpg">
               <img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
@@ -233,7 +240,7 @@
       <div class="footer-up">
         <div class="footer-info">
           <div class="logo-footer">
-            <h1><a>Техномарт</a></h1>
+            <h1><a href="#">Техномарт</a></h1>
           </div>
           <div class="footer-address">
             <p>
