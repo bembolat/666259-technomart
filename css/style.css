@@ -160,14 +160,18 @@ input[type="search"]:focus {
 
 .sorting-list a {
     color: #c7c7c7;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #ee3643;
 }
 
 .sorting-list a:hover {
     color: #231f20;
+     border-bottom: 1px solid #ee3643;
 }
 
 .sorting-list a:active {
     color: #ee3643;
+    border-bottom: none;
 }
 
 .catalog-page-list a {
@@ -242,6 +246,10 @@ input[type="search"]:focus {
     font-size: 21px;
     line-height: 21px;
     color: #222222;
+}
+
+.user-block a:active {
+    color: #b2b2b2;
 }
 
 .information a {
@@ -500,10 +508,21 @@ footer {
     background-color: #ee3643;    
 }
 
+.footer-navigation a:hover {
+    text-decoration: underline;
+}
+
+.footer-navigation-list-top a:active {
+    color: #85909f;
+}
+
 .footer-navigation-list-bottom a {
     color: #ffd180;
 }
 
+.footer-navigation-list-bottom a:active {
+    color: #92856d;
+}
 .footer-down {
      font-size: 16px;
     line-height: 18px;
@@ -514,3 +533,12 @@ footer {
     color: #ffd180;
 }
  
+
+.communication a:active {
+    color: #ee3643;
+}
+
+
+.communication a:hover {
+    text-decoration: underline;
+}
