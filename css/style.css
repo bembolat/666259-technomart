@@ -37,7 +37,7 @@ main {
     font-weight: 400;
     background-color: #ee3643;
 }
- 
+
 .button {
     background-color: #ee3643;
     font-size: 14px;
@@ -46,11 +46,209 @@ main {
     text-transform: uppercase;
     border-radius: 2px;
 } 
-.user-panel {
+
+.button:hover {
+    background-color: #ca2c37;
+}
+
+.button:active {
+    background-color: #ba2732;
+}
+
+.header-logo h1:hover {
+    background-color: #ca2c37;
+}
+
+.header-logo h1:active {
+    background-color: #ba2732;
+}
+
+.header-top {
     background-color: #293449;
 }
+
+
+input[type="search"] {
+    background-color: #293449;
+    border: none;
+}
+
+input[type="search"]:hover {
+    background-color: #212a3a;
+    
+}
+
+input[type="search"]:focus {
+    background-color: #ffffff;
+    
+}
+
+.user-panel-marks:hover {
+    background-color: #212a3a;
+}
+
+.user-panel-marks:active {
+    background-color: #161d29;
+    color: #8b8e94;
+}
+
 .user-panel-buy {
-    background-color: green;
+    background-color: #63a63e;
+}
+
+.basket:hover {
+    background-color: #212a3a;
+}
+
+.basket-order {
+    background-color: #ee3643;
+}
+
+.basket:active {
+    background-color: #161d29;
+    color: #8b8e94;
+}
+.user-panel-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.user-panel-buy:active {
+    background-color: #518534;
+    color:#aac39b;
+}
+
+.user-navigation-list a:hover {
+    color: #ee3643;
+}
+
+.user-navigation-list a:active {
+    color: #b7b7b7;
+}
+
+.information a:hover {
+   color: #ee3643;
+}
+
+.information a:active {
+   color: #cbd1d8;
+}
+
+.site-navigation-item a:hover {
+    background-color: #293449;
+}
+
+.site-navigation-item a:active {
+    background-color: #1d2739;
+    color: #868c95;
+}
+
+.materials a:hover,
+.instruments a:hover,
+.technics a:hover,
+.sales a:hover,
+.delivery-free a:hover {
+    background-color: #cccccc;
+}
+
+.materials a:active,
+.instruments a:active,
+.technics a:active,
+.sales a:active,
+.delivery-free a:active {
+    background-color: #b2b2b2;
+}
+
+.sorting-list a {
+    color: #c7c7c7;
+}
+
+.sorting-list a:hover {
+    color: #231f20;
+}
+
+.sorting-list a:active {
+    color: #ee3643;
+}
+
+.catalog-page-list a {
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-page-list a:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.catalog-page-list a:active {
+    border: 1px solid #ee3643;
+}
+
+.previous:active {
+    background-color: #ee3643;
+}
+
+.category-service-list label{
+    display: block;
+}
+.category-service-list label:hover {
+    background-color: #293449;
+}
+
+.category-service-list label:active {
+    background-color: #ffffff;
+    color: #32425c;
+}
+
+.catalog-page-list a {
+    color: black;
+}
+
+.add-product-button {
+    background-color: #f1f1f1;
+}
+
+
+.add-product-button a {
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+     background-color: #ffffff;
+}
+.add-product-button .active-btn {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+.add-product-button .active-btn:hover {
+    background-color: #ca2c37;
+}
+.add-product-button .active-btn:active {
+    background-color: #ba2732;
+}
+
+.add-product-button .btn:hover {
+    background-color: #ca2c37;
+}
+
+.add-product-button .btn:active {
+    background-color: #ba2732;
+}
+
+
+.active-page {
+    background-color: #ee3643;
+}
+
+.user-block a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #222222;
+}
+
+.information a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #32425c;
+    text-decoration: underline;
 }
 
 .business-card-text {
@@ -67,13 +265,13 @@ main {
     border: 2px solid #ffffff;
 }
 
-.business-card-adress {
+.business-card-address {
     font-size:14px;
     line-height: 24px;
     color: #4c5a71;
 }
 
-.user-navigation-list {
+.user-navigation-list a{
     font-size: 21px;
     line-height: 21px;
     color: #000000 ;
@@ -191,10 +389,35 @@ ul {
 
 .in-bookmark {
    color: #32425c;
+   border: 3px solid #63a63e;
 } 
 
-.make-buy {
+.in-bookmark:hover {
+   color: #32425c;
+   border: 3px solid #32425c;
+} 
+
+.in-bookmark:active {
+   color: #c5cad1;
+   border: 3px solid #c1c6ce;
+} 
+
+.buy {
     background-color: #63a63e;
+}
+
+.buy:hover {
+    background-color: #5fbb2d;
+}
+.buy:active {
+    background-color: #518534;
+}
+
+
+
+article .btn {
+    background-color: #ee3643;
+   
 }
 
 .popular-label {

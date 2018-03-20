@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   </head>
     <body>         
       <header class="main-header">
-          <a class="header-logo" href=" index.html">
+        <div class="header-top">
+          <a class="header-logo" href="index.html">
             <h1>Техномарт</h1>
           </a>
-          <div="user-panel">
-            <form>
-              <label><input type="search"  placeholder="Поиск:"></label>
-              </form>
+            <form class="user-panel">
+            <label><input type="search"  placeholder="Поиск:"></label>
+            </form>
               <a class="user-panel-marks" href="#">Закладки</a>
-              <a class="basket full-basket" href="#full-basket">Корзина: 10</a>
+              <a class="basket basket-order" href="#">Корзина:10</a>
             <a class="user-panel-buy" href="#">Оформить заказ</a>
           </div>
           <div class="business-card">
@@ -26,8 +26,8 @@
               Интернет-магазин<br>
               строительных материалов<br>
               и инструментов для ремонта</p>
-              <a class="button-number" href="tel:+78125550555">+7(812)5550555</a>
-              <span="business-card-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
+              <a class="business-card-phone" href="tel:+78125550555">+7(812)5550555</a>
+              <span class="business-card-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <div class="user-block">
               <a class="login" href="#">Равшан Джамшутович</a>
@@ -268,15 +268,17 @@
               <h2 class="title-add-product">Товар добавлен в корзину!</h2>
               <button class="modal-content-close-buy" type="button"></button>
               <div class="add-product-button">
-                <a class="btn active-btn" href="#ordering">Оформить заказ</a>
+                <a class="active-btn" href="#ordering">Оформить заказ</a>
                 <a class="btn" href="#">Продолжить Покупки</a>
               </div>
             </div>
             <div class="catalog-page">
-                <li class="previous active-page">1</li>
-                <li class="previous" href="#2">2</li>
-                <li class="previous" href="#3">3</li>
-                <lia class="following" href="#next">Следующая</li>
+              <ul class="catalog-page-list">
+                <li class="previous active-page"><a href="#">1</a></li>
+                <li class="previous" href="#2"><a href="#">2</a></li>
+                <li class="previous" href="#3"><a href="#">3</a></li>
+                <li class="following" href="#next"><a href="#">Следующая</a></li>
+              </ul>
                 </div>
               <section class="about-drill">
                   <div class="container-about">
@@ -302,6 +304,7 @@
                 </div>
               </div>
               <div class="footer-menu">
+                <nav class="footer-navigation">
                   <ul class="footer-navigation-list-top">
                     <li><a href="#">Компания</a></li>
                     <li><a href="#">Новости</a></li>
