@@ -524,10 +524,11 @@ footer {
     line-height: 24px;
     background-color: #32425c;
     color: #ffffff;
-    width: 1280px;
 }
 
 .logo-footer h1 {
+    width: 220px;
+    text-transform: uppercase;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -568,7 +569,7 @@ footer {
     text-decoration: underline;
 }
 
-/* сетки */
+/* Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚ÂºÃƒÂÃ‚Â¸ */
 .main-header {
     margin: 0;
     padding: 0;
@@ -630,9 +631,12 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-left: 0;  
-    padding-bottom: 22px;
-    padding-top: 22px;
     border-bottom: 5px solid #293449;
+}
+
+.site-navigation-list a {
+    display: flex;
+    padding: 17px 33px;
 }
 
 .offers {
@@ -655,6 +659,7 @@ footer {
 
 .delivery-free {
     align-self: flex-end;
+    margin-left: auto;
 }
 
 .popular-technic {
@@ -772,8 +777,80 @@ footer {
 }
 
 .about-company {
+    padding-bottom: 85px;
     display: flex;
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
 }
+
+.company {
+    width: 535px;
+}
+
+.more-info {
+    padding: 12px 41px;
+}
+
+.delivery-brand-item {
+    padding: 9px 0;
+}
+
+.contacts a {
+    display: block;
+    padding: 12px 61px;       
+}
+
+ .contacts {
+     width: 300px;
+}
+
+.contacts .make-map  {
+    padding-left: 0;
+}
+
+.footer-up {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo-footer a {
+    display: inline-block;
+    padding: 20px 37px;
+}
+
+.footer-info {
+    margin-right: auto;
+}
+
+
+.footer-navigation-list-top {
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.footer-navigation-list-bottom {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.footer-down {
+    padding: 0;
+    display: flex;
+    width: 940px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-down-wrapper {
+     background-color: #293449;
+}
+
+.communication {
+    display: flex;
+}
+
