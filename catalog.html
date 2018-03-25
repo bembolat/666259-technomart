@@ -65,13 +65,36 @@
            <a class="breadcrumbs-item">Перфораторы</a>
         </div>
         <div class="drill-header">
-            <h2 class="drill-title drill-blue">Перфораторы</h2>
+            <h2 class="drill-blue">Перфораторы</h2>
         </div>
-        <aside class="filter-search">
-            <form>
+        <div class="catalog-wrapper">
             <div class="filter">
-               <h2 class="title-filter">Фильтр:</h2>
-             </div> 
+                <h2 class="title-filter">Фильтр:</h2>
+              </div> 
+            <div class="sorting">
+              <ul class="sorting-list">
+                <li class="sorting-item">
+                  <span>Сортировка:</span>
+                </li>
+                <li class="sorting-item">
+                  <a class="active-list">По цене</a>
+                </li>
+                <li class="sorting-item">
+                  <a href="#by-type">По типу</a>
+                </li>
+                <li class="sorting-item">
+                  <a href="#by-function">По функционалу</a>
+                </li>
+                <li class="sorting-item">
+                  <a class="sorting-up" href="#"></a>
+                </li>
+                <li class="sorting-item"> 
+                  <a class="sorting-down" href="#"></a>
+                </li>
+              </ul>
+            </div>
+        <aside class="filter-search">
+            <form class="form-filter">
              <div class="by-price-filter">
                 <h3>Цена:</h3>  
                 <div class="range-controls">
@@ -117,26 +140,7 @@
                 <button type="submit" class="btn-show">Показать</button>
             </form>
         </aside>
-        <div class="sorting">
-          <span>Сортировка:</span>
-          <ul class="sorting-list">
-            <li class="sorting-item">
-              <a class="active-list">По цене</a>
-            </li>
-            <li class="sorting-item">
-              <a href="#by-type">По типу</a>
-            </li>
-            <li class="sorting-item">
-              <a href="#by-function">По функционалу</a>
-            </li>
-            <li class="sorting-item">
-              <a class="sorting-up" href="#"></a>
-            </li>
-            <li class="sorting-item"> 
-              <a class="sorting-down" href="#"></a>
-            </li>
-          </ul>
-        </div>
+        
         <div class="catalog-drill">
           <h2 class="visually-hidden">Здесь можно выбрать модель перфоратора</h2>
 						<article class="drill">
@@ -270,25 +274,24 @@
 								<h3 class="drill-title">Перфоратор BOSCH BFG 2000</h3>
 							</div>
 							<a class="btn" href="#bfg2000">12500 Р.</a>
-						</article>
-          </div>
+            </article>
+            <ul class="catalog-page-list">
+                <li class="previous active-page"><a href="#">1</a></li>
+                <li class="previous" href="#2"><a href="#">2</a></li>
+                <li class="previous" href="#3"><a href="#">3</a></li>
+                <li class="following" href="#next"><a href="#">Следующая</a></li>
+              </ul>
+          </div> 
+        </div>
           <div class="modal-add-product">
               <span class="icon"></span>
               <h2 class="title-add-product">Товар добавлен в корзину!</h2>
               <button class="modal-content-close-buy" type="button"></button>
               <div class="add-product-button">
                 <a class="active-btn" href="#ordering">Оформить заказ</a>
-                <a class="btn" href="#">Продолжить Покупки</a>
+                <a class="btn continue-btn" href="#">Продолжить Покупки</a>
               </div>
             </div>
-            <div class="catalog-page">
-              <ul class="catalog-page-list">
-                <li class="previous active-page"><a href="#">1</a></li>
-                <li class="previous" href="#2"><a href="#">2</a></li>
-                <li class="previous" href="#3"><a href="#">3</a></li>
-                <li class="following" href="#next"><a href="#">Следующая</a></li>
-              </ul>
-                </div>
               <section class="about-drill">
                   <div class="container-about">
                       <h2 class="title-about">Пара слов о перфораторах</h2>

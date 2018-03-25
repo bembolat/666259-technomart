@@ -36,12 +36,14 @@ main {
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    font-weight: 400;   
+    font-weight: 400;
+    margin: 0;
 }
 
 .header-logo {
+    display: inline-block;
     background-color: #ee3643;
-    width: 220px;
+    padding: 11px 55px;
 }
 
 .button {
@@ -104,6 +106,7 @@ input[type="search"]::-webkit-input-placeholder {
 
 .user-panel-buy {
     background-color: #63a63e;
+    padding: 14px 20px;
 }
 
 .basket:hover {
@@ -111,6 +114,7 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .basket-order {
+    padding: 14px 26px;
     background-color: #ee3643;
 }
 
@@ -219,6 +223,7 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .add-product-button {
+    padding: 36px 70px;
     background-color: #f1f1f1;
 }
 
@@ -469,7 +474,8 @@ article .btn {
     height: 145px;
     border: 1px solid #ebebeb;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    display: flex;
 }
 
 .service {
@@ -532,7 +538,8 @@ footer {
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    background-color: #ee3643;    
+    background-color: #ee3643;
+    margin: 0;
 }
 
 .footer-navigation a:hover {
@@ -569,7 +576,7 @@ footer {
     text-decoration: underline;
 }
 
-/* Ãƒâ€˜Ã‚ÂÃƒÂÃ‚ÂµÃƒâ€˜Ã¢â‚¬Å¡ÃƒÂÃ‚ÂºÃƒÂÃ‚Â¸ */
+
 .main-header {
     margin: 0;
     padding: 0;
@@ -647,9 +654,13 @@ footer {
     flex-wrap: wrap;
 }
 
-.offers div {
-    width: 300px;
+.materials,
+.instruments,
+.technics,
+.sales,
+.delivery-free {
     margin-bottom: 20px;
+    padding: 22px;
 }
 
 
@@ -730,8 +741,8 @@ footer {
 }
 
 .offers h2 {
+    margin: 0;
     background: 0 0;
-    margin: 21px 0 0 23px;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -814,17 +825,13 @@ footer {
     width: 940px;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo-footer a {
     display: inline-block;
     padding: 20px 37px;
 }
-
-.footer-info {
-    margin-right: auto;
-}
-
 
 .footer-navigation-list-top {
     display: flex;
@@ -854,3 +861,169 @@ footer {
     display: flex;
 }
 
+.drill-header {
+    background-color: #f2f6f8;
+    width: 940px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs-list {
+    width: 940px;
+    margin: auto;
+}
+
+.breadcrumbs-item {
+    text-transform: uppercase;
+    font-family:"PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    color:#000000;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.drill-blue {
+    text-transform: uppercase;
+    padding: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #32425c; 
+    margin: 0;
+    font-weight: 400;
+}
+
+.catalog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: auto;
+}
+
+.visually-hidden {
+    display: none;
+
+}
+.sorting {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.sorting-list {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    width: 700px;
+    background-color: #f7f3ec;
+    border-radius: 2px;
+    font-family:"PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.sorting-item {
+    padding: 8px 0;
+}
+
+.filter {
+    width: 220px;
+}
+
+.title-filter {
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding: 8px 18px;
+    background-color: #f7f3ec;
+    margin: 0;
+    font-family:"PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    color:#000000;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.sorting-item span {
+    color:#000000;
+}
+
+.catalog-drill {
+    display: flex;
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.drill {
+    margin-top: 20px;
+    width: 219px;
+    border: 1px solid #e5e5e5;
+    /* margin-bottom: 20px; */
+}
+
+h3 {
+    margin: 0;
+}
+
+.modal-add-product {
+    display: none;
+    width: 620px;
+    background-color: #ffffff;
+    border-top: 6px solid #ee3643;
+     text-align: center;
+}
+
+.title-add-product {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;  
+}
+
+.add-product-button a {
+    text-transform: uppercase;
+    padding: 12px 59px;
+    font-size: 14px;
+    border-radius: 3px;
+    line-height: 18px;
+}
+
+.catalog-page-list {
+    margin: 50px 0 50px 0;
+    display: flex;
+    padding-left: 0;
+}
+
+.catalog-page-list li {
+    margin-right: 20px;
+}
+
+.about-drill {
+    background-color: #f2f6f8
+}
+
+.container-about {
+    padding: 65px 0;
+    width: 940px;
+    margin: auto;
+}
+
+.title-about {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+.form-filter {
+    margin-top: 20px;
+    width: 220px;
+}
+
+.paragraf-about {
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 30px;
+}
