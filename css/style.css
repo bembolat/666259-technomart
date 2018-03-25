@@ -67,6 +67,13 @@ main {
     background-color: #ca2c37;
 }
 
+.user-block {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 12px;
+    text-align: center;
+}
+
 .header-logo h1:active {
     background-color: #ba2732;
 }
@@ -584,6 +591,13 @@ footer {
     margin-bottom: 59px;
 }
 
+.catalog-header {
+    margin: 0;
+    background-color: #f4f7f9;
+    padding: 0;
+    padding-bottom: 60px;
+}
+
 .header-top-wrapper {
     width: 100%;
     background-color: #293449;
@@ -594,12 +608,12 @@ footer {
     width: 940px;
     margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 47px;   
+    align-items: center;   
 }
 
 
 .header-center {
+    padding-top: 47px;
     display: flex;
     justify-content: space-between;
     align-items:flex-start;
@@ -870,7 +884,7 @@ footer {
 
 .breadcrumbs-list {
     width: 940px;
-    margin: auto;
+    margin: 23px auto;
 }
 
 .breadcrumbs-item {
