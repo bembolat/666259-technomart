@@ -25,6 +25,7 @@ main {
 
 .blue-title {
     color: #32425c;
+    font-weight: 400;
 }
 
 .main-header {
@@ -40,10 +41,21 @@ main {
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+
+}
+
 .header-logo {
+    box-shadow: 0 5px 0 0 #b52933;
     display: inline-block;
     background-color: #ee3643;
     padding: 11px 55px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
 }
 
 .button {
@@ -63,7 +75,7 @@ main {
     background-color: #ba2732;
 }
 
-.header-logo h1:hover {
+.header-logo:hover {
     background-color: #ca2c37;
 }
 
@@ -74,7 +86,7 @@ main {
     text-align: center;
 }
 
-.header-logo h1:active {
+header .header-logo:active {
     background-color: #ba2732;
 }
 
@@ -83,8 +95,11 @@ main {
 }
 
 input[type="search"] {
+    width: 250px;
+    margin-left: 40px;
     background-color: #293449;
     border: none;
+    padding: 14px 0;
 }
 
 input[type="search"]:hover {
@@ -111,9 +126,43 @@ input[type="search"]::-webkit-input-placeholder {
     color: #8b8e94;
 }
 
+.user-panel-marks {
+    position: relative;
+    text-align: center;
+    padding: 14px 0;
+    width: 150px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.user-panel-marks::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -53px 1px;
+}
+
 .user-panel-buy {
     background-color: #63a63e;
-    padding: 14px 20px;
+    position: relative;
+    text-align: center;
+    padding: 14px 0;
+    width: 150px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.basket {
+    position: relative;
+    text-align: center;
+    padding: 14px 0px;
+    width: 150px;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .basket:hover {
@@ -121,7 +170,6 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .basket-order {
-    padding: 14px 26px;
     background-color: #ee3643;
 }
 
@@ -334,21 +382,12 @@ ul {
     background-color: #32425c;
 }
 
-.offers h2 {
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-}
-
-.offers a {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-}
-
 .materials {
     background-color: #ffbf47;
+    background-image: url(../img/materials-icon.png);
+    background-repeat: no-repeat;
+    background-position: 213px 31px;
+
 }
 
 .offers .materials-link {
@@ -357,6 +396,9 @@ ul {
 
 .instruments {
     background-color: #3bbce3;
+    background-image: url(../img/tool-icon.png);
+    background-repeat: no-repeat;
+    background-position: 196px 33px;
 }
 
 .offers .instruments-link {
@@ -365,6 +407,9 @@ ul {
 
 .technics {
     background-color: #dc91d8;
+    background-image: url(../img/technics-icon.png);
+    background-repeat: no-repeat;
+    background-position: 190px 33px;
 }
 
 .offers .technics-link {
@@ -373,6 +418,9 @@ ul {
 
 .sales {
     background-color: #8ed78f;
+        background-image: url(../img/discounts-icon.png);
+    background-repeat: no-repeat;
+    background-position: 213px 31px;
 }
 
 .offers .sales-link {
@@ -381,6 +429,9 @@ ul {
 
 .delivery-free {
     background-color: #ffc047;
+    background-image: url(../img/delivery-icon.png);
+    background-repeat: no-repeat;
+    background-position: 190px 32px;
 }
 
 .offers .delivery-link {
@@ -423,9 +474,28 @@ ul {
 }
 
 .price {
+    position:relative;
+    width:80px;
+    margin:10px auto;
+    margin-bottom:20px;
+    padding:10px 30px;
+    color:white;
+    background:#ee3643;
+    border-radius:3px;
     font-size: 17px;
     line-height:18px;
     background-color: #ee3643;
+}
+
+.price:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:-20px;
+    width:0;
+    height:0;
+    border:19px solid white;
+    border-left-color:#ee3643;
 }
 
 .drill-actions {
@@ -434,9 +504,10 @@ ul {
     line-height:18px;
 }
 
-.in-bookmark {
+.drill-actions .in-bookmark {
    color: #32425c;
    border: 3px solid #63a63e;
+   background-color: white;
 } 
 
 .in-bookmark:hover {
@@ -449,8 +520,18 @@ ul {
    border: 3px solid #c1c6ce;
 } 
 
-.buy {
-    background-color: #63a63e;
+.drill-actions a {
+    display:block;
+    width:129px;
+    margin:0 auto;
+    padding:7px 0;
+    border:3px solid #63a63e;
+    border-bottom-color:#367315; 
+    background-color:#63a63e;
+    margin-bottom:7px;
+    font-weight:normal;
+    text-transform:uppercase;    
+    border-radius:3px;
 }
 
 .buy:hover {
@@ -653,6 +734,7 @@ footer {
     justify-content: space-around;
     padding-left: 0;  
     border-bottom: 5px solid #293449;
+    margin: 0;
 }
 
 .site-navigation-list a {
@@ -668,13 +750,9 @@ footer {
     flex-wrap: wrap;
 }
 
-.materials,
-.instruments,
-.technics,
-.sales,
-.delivery-free {
+.offers-item {
     margin-bottom: 20px;
-    padding: 22px;
+    width: 300px;
 }
 
 
@@ -714,11 +792,19 @@ footer {
     justify-content: space-between;
     padding: 0;
     margin-bottom: 20px;
+    align-items: flex-start;
+
 }
 
 .popular-goods-item {
+    position: relative;
+    text-align: center;
     width: 218px;
     border: 1px solid #eaeaea;
+}
+
+.popular-goods-item:hover .drill-actions {
+    display: block;
 }
 
 .popular-label {
@@ -755,21 +841,25 @@ footer {
 }
 
 .offers h2 {
-    margin: 0;
+    margin: 23px 0 0 23px;
     background: 0 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    color: #ffffff
 }
 
-.offers a {
+.offers-link {
     display: inline-block;
-    width: 135px;
     padding: 10px 0;
+    width: 135px;
+    margin: 15px 25px;
     text-transform: uppercase;
     text-align: center;
     border-radius: 3px;
     background: rgba(0,0,0,.1);
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .services {
@@ -860,7 +950,7 @@ footer {
 }
 
 .footer-down {
-    padding: 0;
+    padding: 40px 0;
     display: flex;
     width: 940px;
     margin: auto;
@@ -972,14 +1062,68 @@ footer {
 }
 
 .drill {
+    position: relative;
+    display: inline-block;
     margin-top: 20px;
-    width: 219px;
+    width: 218px;
     border: 1px solid #e5e5e5;
-    /* margin-bottom: 20px; */
+    text-align: center;
+    font-weight: 700;
+}
+
+.drill:nth-of-type(3n) .price {
+    margin-top: 46px;
+    margin-bottom: 0;
+}
+
+.drill-image {
+    width:218px;
+    height:168px;
+}
+
+.drill-image img{
+    max-width:100%;
+    margin-top:20px;
+}
+
+.drill:nth-child(3n) img {
+    margin-top: 12px;
 }
 
 h3 {
     margin: 0;
+}
+
+.drill-title {
+    min-height:40px;
+    padding:0 25px;
+    /* margin-top:10px; */
+    margin-bottom:15px;
+}
+
+.drill-actions {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:218px;
+    height:88px;
+    padding:40px 0;
+    background-color:rgba(255,255,255,0.9);
+    z-index:10;
+}
+
+.drill:hover .drill-actions {
+    display: block;
+}
+
+.oldprice {
+    display: block;
+    min-height:20px;
+    margin-top:15px;
+    margin-bottom:10px;
+    color:#999;
+    text-decoration:line-through;
 }
 
 .modal-add-product {
@@ -987,7 +1131,7 @@ h3 {
     width: 620px;
     background-color: #ffffff;
     border-top: 6px solid #ee3643;
-     text-align: center;
+    text-align: center;
 }
 
 .title-add-product {
@@ -1040,4 +1184,16 @@ h3 {
     font-size: 13px;
     line-height: 24px;
     padding-top: 30px;
+}
+
+.communication p {
+    margin: 0;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright {
+    width: 235px;
 }
