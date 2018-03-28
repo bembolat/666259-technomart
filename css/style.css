@@ -81,8 +81,8 @@ h1 {
 
 .user-block {
     background-color: #ffffff;
-    width: 300px;
-    padding: 12px;
+    width: 255px;
+    padding: 11px;
     text-align: center;
 }
 
@@ -93,10 +93,25 @@ header .header-logo:active {
 .header-top {
     background-color: #293449;
 }
+.user-panel {
+    position: relative;
+    padding-left: 50px;
+}
+
+.search-label {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    z-index: 20;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -106px -1px;
+    cursor: pointer;
+}
 
 input[type="search"] {
     width: 250px;
-    margin-left: 40px;
     background-color: #293449;
     border: none;
     padding: 14px 0;
@@ -195,6 +210,10 @@ input[type="search"]::-webkit-input-placeholder {
     color: #b7b7b7;
 }
 
+.information {
+    padding-left: 20px;
+    padding-top: 4px;
+}
 .information a:hover {
    color: #ee3643;
 }
@@ -212,19 +231,11 @@ input[type="search"]::-webkit-input-placeholder {
     color: #868c95;
 }
 
-.materials a:hover,
-.instruments a:hover,
-.technics a:hover,
-.sales a:hover,
-.delivery-free a:hover {
+.offers-item a:hover {
     background-color: #cccccc;
 }
 
-.materials a:active,
-.instruments a:active,
-.technics a:active,
-.sales a:active,
-.delivery-free a:active {
+.offers-item a:active {
     background-color: #b2b2b2;
 }
 
@@ -314,14 +325,47 @@ input[type="search"]::-webkit-input-placeholder {
     background-color: #ee3643;
 }
 
-.user-block a {
+.login {
+    position: relative;
     font-size: 21px;
     line-height: 21px;
     color: #222222;
 }
 
+.login::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -303px -46px;
+}
+
+.login::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 202px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -306px 2px;
+}
+
+
 .user-block a:active {
     color: #b2b2b2;
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    background: #32425c;
+    border-radius: 50px;
 }
 
 .information a {
@@ -352,6 +396,8 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .business-card-address {
+    margin: 0;
+    padding: 14px 0;
     font-size: 14px;
     line-height: 0px;
     color: #32425c;
@@ -438,15 +484,24 @@ ul {
     background-color: #e5ac40;
 }
 
-.slide-title {
+.offers .slide-title {
     font-size: 36px;
     line-height: 36px;
-    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.slide-title span {
+.slide-text span {
+    margin-left: 24px;
     font-size: 18px;
     line-height: 24px;
+    color: white;
+}
+
+.open-catalog {
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+    padding: 12px 45px 12px 49px;
 }
 
 .popular-technic {
@@ -620,15 +675,7 @@ footer {
     color: #ffffff;
 }
 
-.logo-footer h1 {
-    width: 220px;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    background-color: #ee3643;
-    margin: 0;
-}
+
 
 .footer-navigation a:hover {
     text-decoration: underline;
@@ -710,6 +757,7 @@ footer {
 .user-navigation-list {
     display:flex;
     margin: 0;
+    padding-left: 0;
 }
 
 .user-navigation-item-login {
@@ -718,11 +766,27 @@ footer {
 
 .user-navigation-list a {
     display: inline-block;
-    padding: 14px 25px;
-    vertical-align: top;
+    position: relative;
 }
 
+.user-navigation-item-login a {
+    padding: 14px 27px 14px 48px;
+}
 
+.user-navigation-item-login a::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -304px -98px;
+}
+
+.user-navigation-item-registration a {
+    padding: 14px 25px 14px 25px;
+}
 .site-navigation {
     width: 940px;
     margin: 0 auto;
@@ -755,9 +819,87 @@ footer {
     width: 300px;
 }
 
-
 .slider {
+    position: relative;
     width: 621px
+}
+
+.slide-drill {
+    position: absolute;
+    background-image: url(../img/slider-1.jpg);
+    width: 100%;
+    height: 260px;
+}
+
+
+.slide-perforators {
+    position: absolute;
+    background-image: url(../img/slider-2.jpg);
+    width: 100%;
+    height: 260px;
+    display: none;
+}
+
+.arrow-left::before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    left: 22px;
+    top: 123px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.arrow-left::after,
+.arrow-right::after,
+.arrow-right::before {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    top: 140px;
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.arrow-left::after {
+    left: 22px;
+    transform: rotate(45deg);
+}
+
+.arrow-right::after {
+    top: 123px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 17px;
+}
+
+.arrow-right::before {
+    right: 17px;
+    transform: rotate(-45deg);
+}
+
+.arrow-right:active .slide-perforators  {
+    display: block;
+}
+
+.arrow-right:active .slide-drill {
+    display: none;
+}
+
+.arrow-left:active .offers .slide-drill {
+    display: block;
+}
+
+.arrow-left:active .offers .slide-perforators {
+    display: none;
 }
 
 .delivery-free {
@@ -803,6 +945,25 @@ footer {
     border: 1px solid #eaeaea;
 }
 
+.popular-goods-item:nth-child(1) img{
+    margin: 0;
+}
+
+.popular-goods-item:nth-child(3) img{
+    margin: 15px;
+}
+
+.popular-goods-item:nth-child(2) img{
+    margin: 26px;
+}
+
+.popular-goods-item:nth-child(4) img{
+    margin: 26px;
+}
+
+.popular-goods-item:nth-child(4) .price{
+    margin-top: 45px;
+}
 .popular-goods-item:hover .drill-actions {
     display: block;
 }
@@ -909,8 +1070,19 @@ footer {
 
 .delivery-brand-item {
     padding: 9px 0;
+    position: relative;
 }
 
+.delivery-brand-item::before {
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 19px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+}
 .contacts a {
     display: block;
     padding: 12px 61px;       
@@ -934,7 +1106,15 @@ footer {
 
 .logo-footer a {
     display: inline-block;
-    padding: 20px 37px;
+    padding: 18px 41px 15px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
 }
 
 .footer-navigation-list-top {

@@ -13,9 +13,10 @@
         <div class="header-top-wrapper">
         <div class="header-top">
           <h1 class="header-title"><a class="header-logo" href="index.html">Техномарт</a></h1>
-            <form class="user-panel">
-            <label><input type="search"  placeholder="Поиск:"></label>
-            </form>
+          <form class="user-panel" action="#" method="get" enctype="multipart/form-data">
+            <input type="search" name="search" id="search" placeholder="Поиск:">
+            <label class="search-label" for="search"></label>
+          </form>
               <a class="user-panel-marks" href="#">Закладки: 0</a>
               <a class="basket" href="#">Корзина</a>
             <a class="user-panel-buy" href="#">Оформить заказ</a>
@@ -50,7 +51,7 @@
           </nav>
       </header>  
       <main>
-        <section class="offers ">
+        <section class="offers">
           <div class="materials offers-item">
             <h2 class="white-title">Материалы</h2>
                 <a class="materials-link offers-link" href="#">На любой вкус</a>
@@ -64,24 +65,22 @@
                   <a class="technics-link offers-link" href="#">Для стройки</a>                      
               </div>
             <article class="slider">
-              <figure >
-                  <div class="slides">
-                      <div class="slide">
+                <span class="arrow-left"></span>
+                <span class="arrow-right"></span>    
+                      <div class="slide-perforators">
                         <div class="slide-text">
                           <h2 class="slide-title">Перфораторы</h2>
-                          <span>Настоящие мужские игрушки</span>
-                          <a class="button open-catalog" href="#">Открыть каталог</a>
+                          <span>Настоящие мужские игрушки</span> 
                         </div>
+                        <a class="button open-catalog" href="#">Открыть каталог</a>
                       </div>
-                      <div class="slide">
+                      <div class="slide-drill">
                         <div class="slide-text">
                           <h2 class="slide-title">Дрели</h2>
                           <span>Соседям на радость!</span>
-                          <a class="button open-catalog" href="#">Открыть каталог</a>
                         </div>
-                      </div>
-                    </div>        
-              </figure>
+                        <a class="button open-catalog" href="#">Открыть каталог</a>
+                      </div>       
               </article>
             <div class="sales offers-item">
               <h2 class="white-title">Скидки 50%</h2>                 
