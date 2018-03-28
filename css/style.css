@@ -26,6 +26,7 @@ main {
 .blue-title {
     color: #32425c;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .main-header {
@@ -433,7 +434,6 @@ ul {
     background-image: url(../img/materials-icon.png);
     background-repeat: no-repeat;
     background-position: 213px 31px;
-
 }
 
 .offers .materials-link {
@@ -623,12 +623,13 @@ article .btn {
 
 .service {
     background-color: #f4f7f9;
+    padding-top: 65px;
 }
 
 .service p {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .service h3 {
@@ -644,6 +645,9 @@ article .btn {
     line-height: 30px;
     font-weight: 400;
     color: #ffffff;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
 }
 
 .category-service-item {
@@ -890,7 +894,7 @@ footer {
     display: block;
 }
 
-.arrow-right:active .slide-drill {
+.arrow-right:active  .slide-drill {
     display: none;
 }
 
@@ -898,7 +902,7 @@ footer {
     display: block;
 }
 
-.arrow-left:active .offers .slide-perforators {
+.arrow-left:active  .offers .slide-perforators {
     display: none;
 }
 
@@ -993,6 +997,7 @@ footer {
     flex-wrap: wrap;
     width: 940px;
     margin: auto;
+    margin-bottom: 60px;
     padding: 0;
     justify-content: space-between;
 }
@@ -1026,30 +1031,79 @@ footer {
 .services {
     width: 940px;
     margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.services-title {
+    margin: 0;
+    margin-bottom: 22px;
 }
 
 .service-menu {
+    justify-content: space-between;
     display:flex;
-    align-items: flex-start;
     width: 940px;
     margin: 0 auto;
     padding: 0;
-}
-
-.category-service-list {
-    padding: 0;
+    /* padding-bottom: 100px; */
 }
 
 .category-service-item {
     width: 240px; 
 }
 
+.garant-block p {
+    width: 280px;
+}
+
 .category-service-item label {
     padding: 15px 23px;   
 }
 
+.service-content-list {
+    position: relative;
+    padding-left: 80px;
+    width: 620px;
+}
+
+.delivery-block {
+    position: absolute;
+    background-image: url(../img/bg-delivery.png);
+    background-position: 60% 45%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.garant-block {
+    position: absolute;
+    background-image: url(../img/garant.png);
+    background-position: 60% -10%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.loan-block {
+    position: absolute;
+    background-image: url(../img/bg-credit.png);
+    background-position: 70% -10%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.loan-block p {
+    width: 280px;
+}
+
+.application {
+    display: inline-block;
+    padding: 12px 43px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
 .service-content-item {
-    width: 276px;
+    width: 100%;
+    height: 100%;
 }
 
 .about-company {
@@ -1058,6 +1112,7 @@ footer {
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
+    padding-top: 85px;
 }
 
 .company {
@@ -1102,8 +1157,46 @@ footer {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 38px;
 }
 
+.social a {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-decoration: none;
+    background: #212a3a;
+    border-radius: 50px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.social :before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -153px 0;
+}
+
+.social-button-fb::before, .social-button-inst::before {
+    background-position: -156px -49px;
+}
+
+.social-button-inst::before {
+    background-position: -156px -100px;
+}
+
+.social a:hover,
+.social a:active {
+    background-color: #ee3643;
+}
 .logo-footer a {
     display: inline-block;
     padding: 18px 41px 15px;
@@ -1115,6 +1208,17 @@ footer {
     color: #fff;
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
+}
+
+.new:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: url(../img/new-flag.png) no-repeat 0 0;
 }
 
 .footer-navigation-list-top {
@@ -1130,13 +1234,17 @@ footer {
 }
 
 .footer-down {
-    padding: 40px 0;
+    padding: 40px;
     display: flex;
     width: 940px;
     margin: auto;
     justify-content: space-between;
 }
 
+.made-in {
+    margin-left: 50px;
+    margin-right: 14px;
+}
 .footer-down-wrapper {
      background-color: #293449;
 }
@@ -1256,6 +1364,10 @@ footer {
     margin-bottom: 0;
 }
 
+.new {
+    position: relative;
+}
+
 .drill-image {
     width:218px;
     height:168px;
@@ -1359,6 +1471,10 @@ h3 {
     width: 220px;
 }
 
+.delivery-paragraf {
+    width: 275px;
+    padding-top:20px;
+}
 .paragraf-about {
     margin: 0;
     font-size: 13px;
