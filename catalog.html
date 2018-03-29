@@ -70,12 +70,24 @@
             <div class="filter">
                 <h2 class="title-filter">Фильтр:</h2>
               </div> 
-            <form class="form-filter">
+            <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+                  <legend>Цена:</legend>
+                  <div class="range-filter">
+                      <div class="range-controls">
+                          <div class="scale">
+                              <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                            <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
+                        </div>
+                    </div>
+                </fieldset>
              <div class="by-price-filter">
-                <h3>Цена:</h3>  
-                <div class="range-controls">
-                  <div class="scale"></div>
-                </div>
              </div> 
              <div class="by-firm-filter">
                     <h3>Производители:</h3>
@@ -106,10 +118,12 @@
                         <h3>Питание:</h3>
                         <ul class="source-list">
                             <li>
-                                <input type="radio" name="source" id="rd1" value="accumulator" checked>
-                                <label for="rd1">Аккумуляторные</label>
-                                <input type="radio" name="source" id="rd2" value="lan">
-                                <label for="rd2">Сетевые</label>
+                              <input type="radio" name="source" id="rd1" value="accumulator" checked>
+                              <label for="rd1">Аккумуляторные</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="source" id="rd2" value="lan">
+                              <label for="rd2">Сетевые</label>
                             </li>
                         </ul>
                     </div>
@@ -133,9 +147,7 @@
                   </li>
                   <li class="sorting-item">
                     <a class="sorting-up" href="#"></a>
-                  </li>
-                  <li class="sorting-item"> 
-                    <a class="sorting-down" href="#"></a>
+                    <a class="sorting-down" href="#"></a> 
                   </li>
                 </ul>
               </div>
@@ -274,10 +286,10 @@
 							<div class="btn price" href="#bfg2000">12500 Р.</div>
             </article>
             <ul class="catalog-page-list">
-                <li class="previous active-page"><a href="#">1</a></li>
-                <li class="previous" href="#2"><a href="#">2</a></li>
-                <li class="previous" href="#3"><a href="#">3</a></li>
-                <li class="following" href="#next"><a href="#">Следующая</a></li>
+                <li><a class="previous active-page" href="#" chesked>1</a></li>
+                <li><a class="previous" href="#2" href="#">2</a></li>
+                <li><a class="previous" href="#3" href="#">3</a></li>
+                <li><a class="following" href="#next" href="#">Следующая</a></li>
               </ul>
           </div> 
         </div>
