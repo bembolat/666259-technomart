@@ -84,7 +84,7 @@ h1 {
 
 .user-block {
     background-color: #ffffff;
-    /* width: 260px; */
+    width: 291px;
     padding: 11px;
     text-align: center;
 }
@@ -603,7 +603,7 @@ ul {
 .price {
     position:relative;
     width:80px;
-    margin: 8px auto;
+    margin: -2px auto;
     margin-bottom:20px;
     padding: 10px 25px 10px 30px;
     color:white;
@@ -770,6 +770,7 @@ footer {
 
 .footer-address p {
     padding: 0px 0px 0px 4px;
+    width: 323px;
 }
 
 .footer-navigation a:hover {
@@ -1369,7 +1370,7 @@ footer {
 
 .breadcrumbs-list {
     width: 940px;
-    margin: 23px auto;
+    margin: 21px auto;
 }
 
 .breadcrumbs-item {
@@ -1468,7 +1469,7 @@ footer {
 }
 
 .sorting-item {
-    padding: 8px 0;
+    padding: 6px 0;
 }
 
 .filter {
@@ -1478,7 +1479,7 @@ footer {
 .title-filter {
     text-transform: uppercase;
     border-radius: 2px;
-    padding: 8px 18px;
+    padding: 9px 18px;
     background-color: #f7f3ec;
     margin: 0;
     font-family:"PT Sans", Arial, sans-serif;
@@ -1498,7 +1499,8 @@ footer {
 .range-filter {
   position: relative;
   width: 220px;
-  margin-top: 40px;
+  margin-top: 17px;
+  padding-bottom: 0px;
 }
 
 .filter-item legend {
@@ -1582,12 +1584,13 @@ footer {
 
 .price-controls input {
   width: 65px;
-  padding: 8px 10px;
+  padding: 9px 15px 9px 14px;
   font-size: 16px;
   text-align: center;
   border: none;
   border-radius: 5px;
   background: #f7f3ec;
+  margin-top: -7px;
 }
 
 .by-firm-filter {
@@ -1596,14 +1599,16 @@ footer {
     line-height: 20px;
     text-transform: uppercase;
     border-top: 1px solid #f7f3ec;
-    padding-top: 17px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 2px;
     border-bottom: 1px solid #f7f3ec;
 }
 
 .firm-list  {
     padding-left: 0;
     position: relative;
+    margin-top: 18px;
+    margin-bottom: -3px;
 }
 
 .firm-list input[type=checkbox]+label {
@@ -1668,7 +1673,7 @@ footer {
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 .source-list input[type=radio]+label {
@@ -1724,10 +1729,11 @@ footer {
 
 .source-list {
     padding-left: 0;
+    margin-top: 20px;
 }
 
 .btn-show {
-    margin-top: 55px;
+    margin-top: 57px;
     padding: 11px 38px 8px;
     font-weight: 400;
     font-style: normal;
@@ -1759,7 +1765,7 @@ footer {
 }
 
 .drill:nth-of-type(3n) .price {
-    margin-top: 46px;
+    margin-top: 41px;
     margin-bottom: 0;
 }
 
@@ -1778,11 +1784,11 @@ footer {
 
 .drill-image img{
     max-width:100%;
-    margin-top:20px;
+    margin-top: 27px;
 }
 
 .drill:nth-child(3n) img {
-    margin-top: 12px;
+    margin: 23px 18px 0 0;
 }
 
 h3 {
@@ -1791,7 +1797,7 @@ h3 {
 
 .drill-title {
     min-height:40px;
-    padding: 0 24px 0 23px;
+    padding: 3px 25px 0 23px;
     margin-top:10px;
     margin-bottom: 12px;
     font-size: 18px;
@@ -1846,15 +1852,19 @@ h3 {
 }
 
 .catalog-page-list {
-    margin: 50px 0 50px 0;
+    margin: 62px 0 68px 1px;
     display: flex;
     padding-left: 0;
 }
 
+.catalog-page-list .following {
+    padding: 9px 32px;
+}
+
 .catalog-page-list a {
-    margin-right: 20px;
+    margin-right: 10px;
     color: #000;
-    padding: 9px 14px;
+    padding: 9px 15px;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
 }
@@ -1876,10 +1886,12 @@ h3 {
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
+    font-size: 30px;
+    line-height: 30px;
 }
 
 .form-filter {
-    margin-top: 20px;
+    margin-top: 16px;
     width: 220px;
 }
 
@@ -1888,10 +1900,11 @@ h3 {
     padding-top: 10px;
 }
 .paragraf-about {
-    margin: 0;
+    margin: 0px;
     font-size: 13px;
     line-height: 24px;
-    padding-top: 30px;
+    padding-top: 24px;
+    padding-bottom: 3px;
 }
 
 .communication p {
@@ -1905,4 +1918,112 @@ h3 {
 .copyright {
     width: 235px;
 }
+
+.modal-write-us {
+    width: 620px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    z-index: 200;
+    transform: translateX(-50%);
+    display: none;
+    border-top: 7px solid #ee3643;
+    background: #fff;
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+
+.modal-content-close-buy, .modal-content-close-lesson, .modal-content-close-map {
+    padding: 0;
+    border: none;
+}
+
+.modal-content-close-buy::after, .modal-content-close-buy::before, .modal-content-close-lesson::after, .modal-content-close-lesson::before, .modal-content-close-map::after, .modal-content-close-map::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 5px;
+    background: #ee3643;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content-close-buy::after, .modal-content-close-lesson::after, .modal-content-close-map::after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form-answer {
+    display: flex;
+    margin: 23px 80px 0;
+    justify-content: space-between;
+    width: 465px;
+    flex-wrap: wrap;
+}
+
+.form-answer span {
+    display: inline-block;
+    margin: 0 0 9px;
+}
+
+.form-answer span, .modal-write-us label {
+    font-size: 18px;
+    font-family: "Cuprum","Arial",sans-serif;
+}
+
+.modal-write-us input[type=text] {
+    width: 200px;
+    margin: 0 0px 17px 0;
+    padding: 8px 2px 10px 3px;
+    font-size: 13px;
+    font-family: "PT Sans","Arial",sans-serif;
+    text-align: left;
+    color: #999;
+    background: #fff;
+    border: 2px solid #dee3e4;
+    border-radius: 5px;
+    padding-left: 14px;
+}
+
+.modal-write-us input[type=text], .modal-write-us label {
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    outline: none;
+}
+
+.modal-write-us textarea {
+    margin-bottom: 24px;
+    padding: 5px 0 0 12px;
+    font-size: 13px;
+    font-family: "PT Sans","Arial",sans-serif;
+    border: 2px solid #dee3e4;
+}
+
+.form-btn .btn, .modal-write-us textarea {
+    line-height: 18px;
+    border-radius: 5px;
+    width: 465px;
+}
+
+.form-btn {
+    padding: 37px 0;
+    background: #f1f1f1;
+}
+
+.form-btn .btn {
+    width: 460px;
+    margin: 0 80px;
+    padding: 11px 50px 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ee3643;
+    outline: none;
+    border: none;
+}
+
 
