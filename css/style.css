@@ -173,6 +173,10 @@ input[type="search"]::-webkit-input-placeholder {
     margin-left: 67px;
 }
 
+.user-panel-marks.-index {
+    margin-left: 84px;
+    }
+
 .user-panel-marks::before {
     content: "";
     position: absolute;
@@ -1945,10 +1949,13 @@ h3 {
 .modal-add-product {
     display: none;
     position: relative;
+    top: 10%;
     width: 620px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-top: 6px solid #ee3643;
     text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 
