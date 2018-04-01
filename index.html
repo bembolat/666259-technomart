@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,8 +11,8 @@
       <header class="main-header">
         <div class="header-top-wrapper">
         <div class="header-top">
-          <h1 class="header-title"><a class="header-logo" href="index.html">Техномарт</a></h1>
-          <form class="user-panel" action="#" method="get" enctype="multipart/form-data">
+          <h1 class="header-title"><a class="header-logo">Техномарт</a></h1>
+          <form class="user-panel" method="get">
             <input type="search" name="search" id="search" placeholder="Поиск:">
             <label class="search-label" for="search"></label>
           </form>
@@ -26,7 +25,7 @@
             <div class="business-card">
               <p class="business-card-text">
                 Интернет-магазин
-                строительных материалов<br>
+                строительных материалов
                 и инструментов для ремонта</p>
               </div>
                 <div class="card-wrapper">
@@ -65,22 +64,26 @@
                   <a class="technics-link offers-link" href="#">Для стройки</a>                      
               </div>
             <article class="slider">
-                <span class="arrow-left"></span>
-                <span class="arrow-right"></span>    
-                      <div class="slide-perforators">
-                        <div class="slide-text">
-                          <h2 class="slide-title">Перфораторы</h2>
-                          <span>Настоящие мужские игрушки</span> 
-                        </div>
-                        <a class="button open-catalog" href="#">Открыть каталог</a>
-                      </div>
-                      <div class="slide-drill">
-                        <div class="slide-text">
-                          <h2 class="slide-title">Дрели</h2>
-                          <span>Соседям на радость!</span>
-                        </div>
-                        <a class="button open-catalog" href="#">Открыть каталог</a>
-                      </div>       
+              <div class="slider-controls">
+                <label></label>
+                <label></label>
+              </div>      
+              <span class="arrow-left"></span>
+              <span class="arrow-right"></span> 
+              <div class="slide-perforators">
+                <div class="slide-text">
+                  <h2 class="slide-title">Перфораторы</h2>
+                  <span>Настоящие мужские игрушки</span> 
+                </div>
+                <a class="button open-catalog" href="#">Открыть каталог</a>
+              </div>                         
+              <div class="slide-drill">
+                <div class="slide-text">
+                  <h2 class="slide-title">Дрели</h2>
+                  <span>Соседям на радость!</span>
+                </div>
+                <a class="button open-catalog" href="#">Открыть каталог</a>
+                </div>                      
               </article>
             <div class="sales offers-item">
               <h2 class="white-title">Скидки 50%</h2>                 
@@ -106,7 +109,7 @@
                     <img src="img/bosh9000.jpg" width="184" height="164" alt="Перфоратор Bosch BFG 9000">
                   </div>
                 <h3 class="drill-title">Перфоратор BOSCH BFG 9000</h3><span class="oldprice">32500 P.</span>
-                <div class="price" name="#">25500  Р.</div>
+                <a class="price" href="#">25500  Р.</a>
                 </li>
               <li class="popular-goods-item">
                   <div class="drill-actions">
@@ -117,7 +120,7 @@
                     <img src="img/bosh3000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
                   </div>
                 <h3 class="drill-title">Перфоратор BOSCH BFG 3000</h3><span class="oldprice">22500 P.</span>
-                <div class="price" name="#">15500  Р.</div>
+                <a class="price" href="#">15500  Р.</a>
               </li>
               <li class="popular-goods-item">
                   <div class="drill-actions">
@@ -128,7 +131,7 @@
                     <img src="img/bosh6000.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
                     </div>
                 <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3><span class="oldprice">30500 P.</span>
-                <div class="price" name="#">25500  Р.</div>
+                <a class="price" href="#">25500  Р.</a>
               </li>  
               <li class="popular-goods-item new">
                   <div class="drill-actions">
@@ -139,7 +142,7 @@
                     <img src="img/bosh2000.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
                   </div>
                 <h3 class="drill-title">Перфоратор BOSCH BFG 2000</h3>
-                <div class="price" name="#">12500  Р.</div>
+                <a class="price" href="#">12500  Р.</a>
               </li>  
             </ul>
         </section>
@@ -190,12 +193,13 @@
               <div class="service-content-item delivery-block"><h3 class="blue-title delivery-title">Доставка</h3>
                 <p class="delivery-paragraf">Мы с удовольствием доставим ваш товар прямо 
                   к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,<br> 
+                  Ведь мы неплохо заработаем, 
                   поднимая его на ваш этаж!</p>
+                </div>
                 </div>
               <div class="service-content-item garant-block"><h3 class="blue-title">Гарантия</h3><p>Если купленный у нас товар поломается или заискрит, 
                   а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии.
-                  Мы обменяем сгоревший товар на новый.<br> 
+                  Мы обменяем сгоревший товар на новый. 
                   Дом уж восстановите как-нибудь сами.</p></div>    
               <div class="service-content-item loan-block"><h3 class="blue-title">Кредит</h3><p>Залезть в долговую яму стало проще! 
                   Кредитные консультанты придут вам на помощь.</p><a class="application button" href="#">Отправить заявку</a></div>
@@ -283,14 +287,15 @@
       </div>
     </footer> 
     <div class="modal-write-us">
+      <button class="modal-content-close-lesson" type="button"></button>
         <form class="write-us-form" action="#" method="post">
           <div class="form-answer">
             <label>
-              <span>Ваше имя:</span><br>
+              <span>Ваше имя:</span>
               <input type="text" name="login" placeholder="Представьтесь, пожалуйста">
             </label>
             <label>
-              <span>Ваш e-mail:</span><br>
+              <span>Ваш e-mail:</span>
               <input type="text" name="email" placeholder="Для отправки ответа"> 
             </label>
             <span>Текст письма:</span>
@@ -301,6 +306,5 @@
           </div>
         </form>
       </div>
-    </div>
   </body>
 </html>
