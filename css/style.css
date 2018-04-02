@@ -51,6 +51,7 @@ h1 {
 .logo-footer h1 {
     margin-bottom: 27px;
 }
+
 .header-logo {
     box-shadow: 0 5px 0 0 #b52933;
     display: inline-block;
@@ -60,6 +61,7 @@ h1 {
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
+    vertical-align: top;
 }
 
 .button {
@@ -170,11 +172,11 @@ input[type="search"]::-webkit-input-placeholder {
     /* width: 105px; */
     font-size: 17px;
     line-height: 18px;
-    margin-left: 67px;
+    margin-left: 68px;
 }
 
 .user-panel-marks.-index {
-    margin-left: 84px;
+    margin-left: 72px;
     }
 
 .user-panel-marks::before {
@@ -192,7 +194,7 @@ input[type="search"]::-webkit-input-placeholder {
     background-color: #63a63e;
     position: relative;
     text-align: center;
-    padding: 12px 22px 12px 20px;
+    padding: 12px 21px 12px 20px;
     /* width: 150px; */
     font-size: 17px;
     line-height: 18px;
@@ -296,6 +298,7 @@ input[type="search"]::-webkit-input-placeholder {
 
 .sorting-list .sorting-up {
     display: inline-block;
+    vertical-align: top;
     width: 20px;
     height: 20px;
     border: none;
@@ -304,12 +307,12 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .sorting-list .active-list {
-    /* margin-left: 44px; */
     color: #ee3643;
 }
 
 .sorting-list .sorting-down {
     display: inline-block;
+    vertical-align: top;
     width: 20px;
     height: 20px;
     border: none;
@@ -365,7 +368,7 @@ input[type="search"]::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 18px;
     color: black;
-     background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .add-product-button .active-btn {
@@ -426,6 +429,7 @@ input[type="search"]::-webkit-input-placeholder {
 
 .point {
     display: inline-block;
+    vertical-align: top;
     height: 5px;
     width: 5px;
     margin-left: 11px;
@@ -617,7 +621,7 @@ ul {
     position:relative;
     width:80px;
     margin: -2px auto;
-    margin-bottom:20px;
+    margin-bottom: 22px;
     padding: 10px 25px 10px 30px;
     color:white;
     background:#ee3643;
@@ -715,9 +719,10 @@ article .btn {
     box-shadow:0 4px 10px rgba(41,52,73,.5);
     opacity:.3;
 }
+
 .service {
     background-color: #f4f7f9;
-    padding-top: 69px;
+    padding-top: 68px;
     /* padding-left: 10px; */
     /* padding-right:10px; */
 }
@@ -735,6 +740,7 @@ article .btn {
     font-weight: 400;
     padding: 0;
     margin: 0;
+    padding-bottom: 0px;
 }
 
 .category-service-list {
@@ -758,16 +764,18 @@ article .btn {
     line-height: 24px;
     margin-top: 25px;
 }
+
 .delivery {
     width: 400px;
     margin-bottom: 0px;
 }
+
 .delivery-brand-list {
     font-size: 18px;
     line-height: 24px;
     margin-top: 10px;
     padding-left: 37px;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
 }
 
 .contacts p {
@@ -824,7 +832,6 @@ footer {
 .communication a:hover {
     text-decoration: none;
 }
-
 
 .main-header {
     margin: 0;
@@ -883,6 +890,7 @@ footer {
 .user-navigation-list a {
     display: inline-block;
     position: relative;
+    vertical-align: top;
 }
 
 .user-navigation-item-login a {
@@ -932,7 +940,7 @@ footer {
     justify-content: space-between;
     width: 940px;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     padding-left: 10px;
     padding-right:10px;
 }
@@ -956,10 +964,6 @@ footer {
     width: 60px;
     height: 10px;
     text-align: center;
-}
-
-#btn-1:checked~.slider-controls label[for=btn-1], #btn-2:checked~.slider-controls label[for=btn-2] {
-    background: #ee3643;
 }
 
 .slider-controls label {
@@ -1083,9 +1087,7 @@ footer {
     width: 940px;
     align-items: center;
     margin-bottom: 20px;
-    padding: 7px 0;
-    padding-left: 10px;
-    padding-right:10px;
+    padding: 7px 0px 5px 0;
 }
 
 .goods-title {
@@ -1105,7 +1107,7 @@ footer {
     margin: auto;
     justify-content: space-between;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     align-items: flex-start;
     padding-left: 10px;
     padding-right:10px;
@@ -1151,9 +1153,7 @@ footer {
      justify-content: space-between;
      width: 940px;
      align-items: center;
-     margin-bottom: 20px;
-     padding-left: 10px;
-     padding-right:10px;
+     margin-bottom: 17px;
 }
 
 .popular-label a {
@@ -1172,7 +1172,7 @@ footer {
     flex-wrap: wrap;
     width: 940px;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     padding: 0;
     justify-content: space-between;
     padding-left: 10px;
@@ -1206,6 +1206,7 @@ footer {
     border-radius: 3px;
     font-size: 14px;
     line-height: 18px;
+    vertical-align: top;
 }
 
 .services {
@@ -1282,6 +1283,7 @@ footer {
     padding: 12px 43px;
     border-radius: 3px;
     margin-top: 15px;
+    vertical-align: top;
 }
 
 .service-content-item {
@@ -1290,7 +1292,7 @@ footer {
 }
 
 .about-company {
-    padding-bottom: 84px;
+    padding-bottom: 85px;
     display: flex;
     justify-content: space-between;
     width: 940px;
@@ -1331,7 +1333,7 @@ footer {
 .contacts .make-map  {
     display: block;
     padding: 19px 0px;
-    margin-bottom: 17px;
+    margin-bottom: 14px;
 }
 
 .make-map iframe {
@@ -1366,12 +1368,13 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    vertical-align: top;
 }
 
 .social :before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: 10px;
     width: 20px;
     height: 20px;
@@ -1391,8 +1394,10 @@ footer {
 .social a:active {
     background-color: #ee3643;
 }
+
 .logo-footer a {
     display: inline-block;
+    vertical-align: top;
     padding: 18px 41px 15px;
     font-size: 30px;
     line-height: 30px;
@@ -1430,7 +1435,7 @@ footer {
 }
 
 .footer-down {
-    padding: 34px 0px 24px 0px;
+    padding: 40px 0px 24px 0px;
     display: flex;
     max-width: 940px;
     margin: auto;
@@ -1457,10 +1462,8 @@ footer {
 .drill-header {
     background-color: #f2f6f8;
     width: 940px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right:10px;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .breadcrumbs-list {
@@ -1549,6 +1552,8 @@ footer {
     display: flex;
     justify-content: space-around;
     text-transform: uppercase;
+    margin-bottom: 3px;
+    padding: 0px 0;
 }
 
 .sorting-list {
@@ -1683,6 +1688,7 @@ footer {
   text-transform: uppercase;
   text-indent: 100%;
   overflow: hidden;
+  vertical-align: top;
 }
 
 .max-price input {
@@ -1790,7 +1796,7 @@ footer {
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
-    padding-top: 20px;
+    padding-top: 26px;
 }
 
 .source-list input[type=radio]+label {
@@ -1874,6 +1880,7 @@ footer {
 .drill {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-top: 20px;
     width: 218px;
     border: 1px solid #e5e5e5;
@@ -1884,6 +1891,14 @@ footer {
 .drill:nth-of-type(3n) .price {
     margin-top: 41px;
     margin-bottom: 0;
+}
+
+.drill:nth-of-type(6) img {
+    padding: 0px 21px 0px 0px;
+}
+
+.drill:nth-of-type(9) img {
+    padding: 0px 21px 0px 0px;
 }
 
 .drill:hover {
@@ -1913,8 +1928,9 @@ h3 {
 }
 
 .drill-title {
+    font-family: "PT Sans", Arial, sans-serif;
     min-height:40px;
-    padding: 3px 25px 0 23px;
+    padding: 0px 25px 0 23px;
     margin-top:10px;
     margin-bottom: 12px;
     font-size: 18px;
@@ -1940,8 +1956,8 @@ h3 {
 .oldprice {
     display: block;
     min-height:20px;
-    margin-top: 11px;
-    margin-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 9px;
     color:#999;
     text-decoration:line-through;
 }
@@ -1967,10 +1983,10 @@ h3 {
     height: 66px;
     line-height: 42px;
     font-family: "Arial",sans-serif;
-    vertical-align: middle;
+    vertical-align: top;
     text-decoration: none;
     background: #693;
-    border-radius: 50px;
+    border-radius: 50px;   
 }
 
 .modal-add-product .icon::before {
@@ -1989,6 +2005,7 @@ h3 {
     line-height: 30px;
     font-weight: 400;
     display: inline-block;
+    vertical-align: top;
 }
 
 .add-product-button a {
@@ -2000,7 +2017,7 @@ h3 {
 }
 
 .catalog-page-list {
-    margin: 62px 0 68px 1px;
+    margin: 60px 0 63px 1px;
     display: flex;
     padding-left: 0;
 }
@@ -2028,7 +2045,7 @@ h3 {
 }
 
 .container-about {
-    padding: 70px 0;
+    padding: 74px 0px 66px 0px;
     width: 940px;
     margin: auto;
     padding-left: 10px;
@@ -2049,7 +2066,7 @@ h3 {
 }
 
 .service .delivery-paragraf {
-    width: 275px;
+    width: 273px;
     padding-top: 10px;
 }
 
@@ -2122,6 +2139,7 @@ h3 {
 .form-answer span {
     display: inline-block;
     margin: 0 0 9px;
+    vertical-align: top;
 }
 
 .form-answer span, .modal-write-us label {
