@@ -1196,6 +1196,12 @@ footer {
     font-size: 24px;
     line-height: 30px;
     color: #ffffff;
+}
+
+.offers h2:not(.slide-title) {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    word-wrap: break-word;
     max-width: 160px;
 }
 
@@ -1756,6 +1762,17 @@ footer {
     background-position: 0 -195px;
 }
 
+.firm-list input[type=checkbox][disabled]:checked+label::after {
+    content: " ";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -4px;
+    left: 0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -99 -247px;
+}
+
 .firm-list input[type=checkbox]:checked+label:hover::after{
     content:'';
     position:absolute;
@@ -1778,6 +1795,18 @@ footer {
     background: url(../img/sprite.png) no-repeat;
     background-position: -55px -194px;
 }
+
+.firm-list input[type=checkbox][disabled]+label::before {
+    content: " ";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -4px;
+    left: 0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -155px -247;
+}
+
 
 .firm-list input[type=checkbox]+label:hover::before {
     content:'';
@@ -1820,6 +1849,17 @@ footer {
     background-position: -153px -143px;
 }
 
+.source-list input[type=radio][disabled]+label::before {
+    content: " ";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -4px;
+    left: -1px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -3px -247px;
+}
+
 .source-list input[type=radio]:checked+label::after {
     content: " ";
     position: absolute;
@@ -1829,6 +1869,17 @@ footer {
     left: -2px;
     background: url(../img/sprite.png) no-repeat;
     background-position: -101px -193px;
+}
+
+.source-list input[type=radio][disabled]:checked+label::after {
+    content: " ";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    left: -2px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -52px -246px;
 }
 
 .source-list input[type=radio]:checked+label:hover::after {
@@ -2020,7 +2071,7 @@ h3 {
 }
 
 .catalog-page-list {
-    margin: 60px 0 63px 1px;
+    margin: 60px 0 70px 1px;
     display: flex;
     padding-left: 0;
 }
@@ -2048,7 +2099,7 @@ h3 {
 }
 
 .container-about {
-    padding: 74px 0px 66px 0px;
+    padding: 67px 0px 66px 0px;
     width: 940px;
     margin: auto;
     padding-left: 10px;
