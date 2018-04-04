@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    min-width: 960px;
     font-family: "Cuprum", Arial, sans-serif;
     font-weight: 400;
     background-color: #ffffff;
@@ -66,6 +66,7 @@ h1 {
 }
 
 .button {
+    font-family: "Cuprum", Arial, sans-serif;
     background-color: #ee3643;
     font-size: 14px;
     line-height: 18px;
@@ -106,7 +107,7 @@ header .header-logo:active {
 }
 
 .search-label {
-    position: absolute;
+       position: absolute;
     top: 12px;
     left: 17px;
     z-index: 20;
@@ -471,7 +472,6 @@ input[type="search"]::-webkit-input-placeholder {
 .catalog-header .business-card-phone {
     margin-left: 15px
 }
-
 .business-card-phone::before{
     content: "";
     position: absolute;
@@ -780,9 +780,9 @@ article .btn {
 .delivery-brand-list {
     font-size: 18px;
     line-height: 24px;
-    margin-top: 10px;
+    margin-top: 11px;
     padding-left: 37px;
-    margin-bottom: 34px;
+    margin-bottom: 36px;
 }
 
 .contacts p {
@@ -888,7 +888,7 @@ footer {
     -webkit-box-align:start;
         -ms-flex-align:start;
             align-items:flex-start;
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
     margin-bottom: 35px;
     padding-left: 10px;
@@ -1128,13 +1128,13 @@ footer {
     display: flex;
     margin: 0 auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 940px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 20px;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 17px;
     padding: 7px 0px 5px 0;
 }
 
@@ -1208,13 +1208,13 @@ footer {
      display: flex;
      margin: 0 auto;
      -webkit-box-pack: justify;
-         -ms-flex-pack: justify;
-             justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
      width: 940px;
      -webkit-box-align: center;
-         -ms-flex-align: center;
-             align-items: center;
-     margin-bottom: 17px;
+     -ms-flex-align: center;
+     align-items: center;
+     margin-bottom: 19px;
 }
 
 .popular-label a {
@@ -1329,9 +1329,9 @@ footer {
 }
 
 .delivery-block {
-    position: absolute;
+    /* position: absolute; */
     background-image: url(../img/bg-delivery.png);
-    background-position: 65% 114%;
+    background-position: 100% 98%;
     background-repeat: no-repeat;
     display: block;
 }
@@ -1370,16 +1370,17 @@ footer {
 }
 
 .about-company {
-    padding-bottom: 85px;
+    font-family: "PT Sans", Arial, sans-serif;
+    padding-bottom: 89px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    padding-top: 55px;
+    padding-top: 51px;
     padding-left: 10px;
     padding-right:10px;
 }
@@ -1389,7 +1390,7 @@ footer {
 }
 
 .more-info {
-    padding: 12px 41px;
+    padding: 11px 41px;
 }
 
 .delivery-brand-item {
@@ -1431,7 +1432,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1535,7 +1536,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 940px;
+    width: 940px;
     margin: auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -2400,4 +2401,3 @@ h3 {
     outline: none;
     border: none;
 }
-
