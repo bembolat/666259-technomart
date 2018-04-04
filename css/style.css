@@ -24,6 +24,9 @@ main {
     font-weight: 400;
 }
 
+.company-title {
+    margin-bottom: 0px;
+}
 .blue-title {
     color: #32425c;
     font-weight: 400;
@@ -250,8 +253,8 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .information {
-    padding-left: 18px;
-    padding-top: 6px;
+    padding-left: 19px;
+    padding-top: 8px;
 }
 .information a:hover {
    color: #ee3643;
@@ -445,7 +448,7 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .information .cabinet {
-    margin-left: 12px;
+    margin-left: 9px;
 }
 .business-card-text {
     width: 200px;
@@ -470,7 +473,11 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 .catalog-header .business-card-phone {
-    margin-left: 15px
+    margin-left: 20px;
+}
+
+.catalog-header .business-card-address {
+    padding: 18px 0px 16px 21px;
 }
 .business-card-phone::before{
     content: "";
@@ -618,9 +625,10 @@ ul {
 .price {
     display: block;
     position:relative;
+    font-family: "PT Sans", Arial, sans-serif;
     width:80px;
     margin: -2px auto;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     padding: 10px 25px 10px 30px;
     color:white;
     background:#ee3643;
@@ -769,7 +777,7 @@ article .btn {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
-    margin-top: 25px;
+    margin-top: 26px;
 }
 
 .delivery {
@@ -789,6 +797,8 @@ article .btn {
     width: 180px;
     font-size: 13px;
     line-height: 24px;
+    margin-top: 28px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -876,7 +886,6 @@ footer {
     padding-right:10px;
 }
 
-
 .header-center {
     padding-top: 47px;
     display: -webkit-box;
@@ -893,6 +902,10 @@ footer {
     margin-bottom: 35px;
     padding-left: 10px;
     padding-right:10px;
+}
+
+.catalog-header .header-center {
+    margin-bottom: 33px;
 }
 
 .business-card {
@@ -1134,8 +1147,8 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 17px;
-    padding: 7px 0px 5px 0;
+    margin-bottom: 19px;
+    padding: 6px 0px 5px 0;
 }
 
 .goods-title {
@@ -1219,7 +1232,7 @@ footer {
 
 .popular-label a {
     width: 254px;
-    padding: 12px 0;
+    padding: 10px 0;
     margin-right: 24px;
     border-radius: 3px;
 }
@@ -1293,7 +1306,7 @@ footer {
 
 .services-title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .service-menu {
@@ -1370,8 +1383,7 @@ footer {
 }
 
 .about-company {
-    font-family: "PT Sans", Arial, sans-serif;
-    padding-bottom: 89px;
+    padding-bottom: 86px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1380,7 +1392,7 @@ footer {
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
-    padding-top: 51px;
+    padding-top: 53px;
     padding-left: 10px;
     padding-right:10px;
 }
@@ -1416,7 +1428,7 @@ footer {
 .contacts .make-map  {
     display: block;
     padding: 19px 0px;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
 }
 
 .make-map iframe {
@@ -1425,7 +1437,7 @@ footer {
 
 .contacts a {
     display: block;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .footer-up {
@@ -1539,8 +1551,8 @@ footer {
     width: 940px;
     margin: auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right:10px;
 }
@@ -1566,13 +1578,14 @@ footer {
     background-color: #f2f6f8;
     width: 940px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
 }
 
 .breadcrumbs-list {
     width: 940px;
     margin: 18px auto;
     padding: 0 10px;
+    margin-bottom: 21px;
 }
 
 .breadcrumbs-item {
@@ -1661,23 +1674,23 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     text-transform: uppercase;
-    margin-bottom: 3px;
-    padding: 0px 0;
+    margin-bottom: 1px;
+    padding: 0;
 }
 
 .sorting-list {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 0px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px 0;
     width: 700px;
     background-color: #f7f3ec;
     border-radius: 2px;
@@ -1689,7 +1702,7 @@ footer {
 }
 
 .sorting-item:nth-child(1) {
-    padding: 6px 0px 6px 17px;
+    padding: 9px 0px 9px 17px;
 }
 
 .sorting-item:nth-child(2) {
@@ -2036,8 +2049,8 @@ footer {
 }
 
 .btn-show {
-    margin-top: 57px;
-    padding: 11px 38px 8px;
+    margin-top: 56px;
+    padding: 10px 38px 8px;
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
@@ -2106,8 +2119,21 @@ footer {
 }
 
 .drill:nth-child(3n) img {
-    margin: 23px 18px 0 0;
+    margin: 22px 18px 0 0;
 }
+
+.drill:nth-of-type(1) img {
+    margin: 28px 18px 0 0;
+}
+
+.drill:nth-of-type(4) img {
+    margin: 28px 18px 0 0;
+}
+
+.drill:nth-of-type(7) img {
+    margin: 28px 18px 0 0;
+} 
+
 
 h3 {
     margin: 0;
@@ -2141,9 +2167,10 @@ h3 {
 
 .oldprice {
     display: block;
+    font-family: "PT Sans", Arial, sans-serif;
     min-height:20px;
     margin-top: 0px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     color:#999;
     text-decoration:line-through;
 }
@@ -2213,7 +2240,8 @@ h3 {
 }
 
 .catalog-page-list .following {
-    padding: 9px 32px;
+    padding: 9px 31px;
+    text-transform: uppercase;
 }
 
 .catalog-page-list a {
@@ -2235,7 +2263,7 @@ h3 {
 }
 
 .container-about {
-    padding: 67px 0px 66px 0px;
+    padding: 65px 0px 68px 0px;
     width: 940px;
     margin: auto;
     padding-left: 10px;
@@ -2257,7 +2285,7 @@ h3 {
 
 .service .delivery-paragraf {
     width: 273px;
-    padding-top: 10px;
+    padding-top: 9px;
 }
 
 .paragraf-about {
@@ -2265,8 +2293,8 @@ h3 {
     margin: 0px;
     font-size: 13px;
     line-height: 24px;
-    padding-top: 24px;
-    padding-bottom: 3px;
+    padding-top: 26px;
+    padding-bottom: 1px;
 }
 
 .communication p {
