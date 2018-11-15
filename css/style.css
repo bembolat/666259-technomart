@@ -76,7 +76,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     border-radius: 2px;
-} 
+}
 
 .button:hover {
     background-color: #ca2c37;
@@ -121,16 +121,16 @@ header .header-logo:active {
     cursor: pointer;
 }
 
-input[type=search]:hover+label {
+input[type="search"]:hover+label {
     background: url(../img/sprite.png) no-repeat;
     background-position: -106px -51px;
 }
 
-input[type=search]:focus+label {
+input[type="search"]:focus+label {
     background:url(../img/sprite.png) no-repeat;
     background-position:-207px -151px;
     }
-    
+
 input[type="search"] {
     width: 100%;
     padding: 12px 0px 12px 49px;
@@ -139,7 +139,6 @@ input[type="search"] {
     font-weight: 400;
     font-style: normal;
     font-family: "Cuprum", Arial, sans-serif;
-    color: #fff;
     background-color: #293449;
     border: none;
     margin: 0;
@@ -147,18 +146,18 @@ input[type="search"] {
 }
 
 input[type="search"]:hover {
-    background-color: #212a3a;    
+    background-color: #212a3a;
 }
 
 input[type="search"]:focus {
     background-color: #ffffff;
-    
+
 }
 
 input[type="search"]::-webkit-input-placeholder {
     color: #ffffff;
     font-size: 17px;
-    line-height: 18px;    
+    line-height: 18px;
 }
 
 .user-panel-marks:hover {
@@ -659,17 +658,17 @@ ul {
    color: #32425c;
    border: 3px solid #63a63e;
    background-color: white;
-} 
+}
 
 .in-bookmark:hover {
    color: #32425c;
    border: 3px solid #32425c;
-} 
+}
 
 .in-bookmark:active {
    color: #c5cad1;
    border: 3px solid #c1c6ce;
-} 
+}
 
 .drill-actions a {
     display:block;
@@ -677,11 +676,11 @@ ul {
     margin:0 auto;
     padding:7px 0;
     border:3px solid #63a63e;
-    border-bottom-color:#367315; 
+    border-bottom-color:#367315;
     background-color:#63a63e;
     margin-bottom:7px;
     font-weight:normal;
-    text-transform:uppercase;    
+    text-transform:uppercase;
     border-radius:3px;
 }
 
@@ -695,7 +694,7 @@ ul {
 
 article .btn {
     background-color: #ee3643;
-   
+
 }
 
 .popular-label {
@@ -770,7 +769,7 @@ article .btn {
 
 .category-service-item {
     background-color: #32425c;
-    
+
 }
 
 .company p {
@@ -841,7 +840,7 @@ footer {
     color: #ffd180;
     text-decoration: underline;
 }
- 
+
 .communication a:active {
     color: #ee3643;
 }
@@ -872,7 +871,7 @@ footer {
 .links-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;      
+    display: flex;
     margin-left: auto;
 }
 
@@ -1324,7 +1323,7 @@ footer {
 }
 
 .category-service-item {
-    width: 240px; 
+    width: 240px;
 }
 
 .garant-block p {
@@ -1332,7 +1331,7 @@ footer {
 }
 
 .category-service-item label {
-    padding: 15px 23px;   
+    padding: 15px 23px;
 }
 
 .service-content-list {
@@ -1623,7 +1622,7 @@ footer {
     margin-left: 17px;
 }
 
-.breadcrumbs-item:nth-child(2)::after, 
+.breadcrumbs-item:nth-child(2)::after,
 .breadcrumbs-item:nth-child(3)::after {
     content: "";
     position: absolute;
@@ -1644,7 +1643,7 @@ footer {
     padding: 30px;
     font-size: 30px;
     line-height: 30px;
-    color: #32425c; 
+    color: #32425c;
     margin: 0;
     font-weight: 400;
 }
@@ -1809,7 +1808,7 @@ footer {
 }
 
 .price-controls {
-  font-size: 0;  
+  font-size: 0;
 }
 
 .price-controls label {
@@ -2132,7 +2131,7 @@ footer {
 
 .drill:nth-of-type(7) img {
     margin: 28px 18px 0 0;
-} 
+}
 
 
 h3 {
@@ -2201,7 +2200,7 @@ h3 {
     vertical-align: top;
     text-decoration: none;
     background: #693;
-    border-radius: 50px;   
+    border-radius: 50px;
 }
 
 .modal-add-product .icon::before {
@@ -2347,9 +2346,9 @@ h3 {
     border: none;
 }
 
-.modal-content-close-lesson::after, .modal-content-close-buy::after {   
-    -webkit-transform: rotate(45deg);   
-        -ms-transform: rotate(45deg);   
+.modal-content-close-lesson::after, .modal-content-close-buy::after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
             transform: rotate(45deg);
 }
 
@@ -2429,3 +2428,26 @@ h3 {
     outline: none;
     border: none;
 }
+
+@keyframes bounce {
+    0% { transform: translateY(-2000px); }
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10Px); }
+    100% { transform: translateY(0); }
+}
+
+.modal-write-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+ @keyframes shake {
+     0%, 100%                { transform: translateX(0px); }
+     10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+     20%, 40%, 60%, 80%      { transform: translateX(10px); }
+ }
+
+ .modal-write-error {
+     animation-name: shake;
+     animation-duration: 0.6s;
+ }
